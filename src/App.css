@@ -1,38 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  background-color: rgb(248, 248, 248);
+  color:rgb(185, 185, 185);
+}
+
+h1 {
+  color:rgb(50, 73, 73);
+  margin-bottom: 20px;
+}
+
+#question-number {
+  color: rgb(85, 165, 158);
+}
+
 .App {
   text-align: center;
+  margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.question-card {
+  margin: 20px auto 20px auto;
+  background-color: rgb(125, 207, 200);
+  padding: 16px;
+  border-radius: 16px;
+  color: rgb(75, 92, 90);
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 11px 11px 34px -12px rgba(0,0,0,0.33);
+  -webkit-box-shadow: 11px 11px 34px -12px rgba(0,0,0,0.33);
+  -moz-box-shadow: 11px 11px 34px -12px rgba(0,0,0,0.33);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.score {
+  background-color: rgb(216, 236, 235);
+  max-width: 170px;
+  margin: auto;
+  border-radius: 16px;
+  font-size: 12px;
+  color:rgb(61, 109, 109);
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.question-text {
+  color: rgb(241, 241, 241);
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  margin-top: 18px;
+}
+
+li {
+  background-color: rgb(153, 221, 217);
+  padding: 16px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+li:hover {
+  background-color: rgb(169, 230, 225);
+  color: rgb(50, 73, 73);
+}
+
+li:active {
+  background-color: white;
+}
+
+.final-results {
+  margin: 20px auto 20px auto;
+  background-color: rgb(125, 207, 200);
+  padding: 16px;
+  border-radius: 16px;
+  color: rgb(75, 92, 90);
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 11px 11px 34px -12px rgba(0,0,0,0.33);
+  -webkit-box-shadow: 11px 11px 34px -12px rgba(0,0,0,0.33);
+  -moz-box-shadow: 11px 11px 34px -12px rgba(0,0,0,0.33);
+}
+
+.bubble-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 140px;
+  margin: auto;
+  gap: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.bubble {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 10px;
+  border-radius: 14px;
+  border: 0;
+  background-color: rgb(153, 221, 217);
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(75, 92, 90);
+}
+
+button:hover {
+  background-color: rgb(169, 230, 225);
+  color: rgb(50, 73, 73);
 }
